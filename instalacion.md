@@ -7,10 +7,10 @@
 
 ## Requisitos Máquina virtual
 1. [Windows Server 2016](https://www.microsoft.com/es-xl/evalcenter/evaluate-windows-server-2016)
-2. Tres discos duros:
-    1. Un disco duro de 100 GB para nuestro sistema operativo
-    2. Un disco duro de 100 GB para nuestros archivos logs transaccionales
-    3. Un disco duro de 200 GB para nuestra base de datos
+2. Tres discos duros virtuales:
+    1. Un disco duro virtual de 100 GB para nuestro sistema operativo
+    2. Un disco duro virtual de 100 GB para nuestros archivos logs transaccionales
+    3. Un disco duro virtual de 200 GB para nuestra base de datos
 3. RAM: 8GB
 4. Controlador de dominio
 
@@ -38,7 +38,7 @@
 2. Clic derecho y clic en **configuraciones**
 3. Clic en **storage**
 4. Clic en el apartado de **disk image file**
-5. Clic en **eEige un disco óptico virtual**
+5. Clic en **Elige un disco óptico virtual**
 6. Clic en la opción **Escoger archivo de disco** y seleccionamos nuestro archivo .ISO
 
 
