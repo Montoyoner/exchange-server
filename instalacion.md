@@ -17,21 +17,35 @@
 ## Creación máquina virtual
 1. Clic en nueva
 2. Escribir nombre de máquina
-    ![]()
+
+    ![](./images/vm-name.png)
+
     > Para este ejemplo el nombre de mi máquina será **SRV-EXCH**
 3. En tipo seleccionamos **Microsoft Windows** y en versión elegimos **Windows 2016 (64-bit)**
-    ![]()
+
+    ![](./images/vm-type-version.png)
+
 4. En **tamaño de memoria** elegimos 8 GB
-    ![]()
+
+    ![](./images/vm-ram.png)
+
 5. En **Disco duro** seleccionamos la opción de **Crear un nuevo disco duro virtual ahora** y clic en **crear**
-    ![]()
-6. En **Tipo de archivo de disco duro** seleccionamos VDI y clic en **Continuar**
-    ![]()
-7. En **Almacenamiento en disco duro físico** seleccionamos **Asignado dinámicamente** y clic en **Continuar**
-    ![]()
-8. Seleccionamos el tamaño del disco duro y clic en **crear**
-    ![]()
+
+    ![](./images/vm-hdd.png)
+
+6. Seleccionamos el tamaño del disco duro virtual
+    
+    ![](./images/vm-hdd-size.png)
     > En este ejemplo estoy seleccionado 100 GB
+
+7. En **Tipo de archivo de disco duro** seleccionamos VDI
+    
+    ![](./images/vm-hdd-type.png)
+
+8. En **Almacenamiento en disco duro físico** seleccionamos **Asignado dinámicamente** y clic en **Continuar**
+    
+    ![](./images/vm-hdd-storage.png)
+
 
 ## Agregar archivo .ISO a nuestra máquina virtual
 1. Seleccionar nuestra máquia virtual a la que le vamos agregar nuestro archivo .ISO
