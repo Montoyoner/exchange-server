@@ -42,7 +42,7 @@
     
     ![](./images/vm-hdd-type.png)
 
-8. En **Almacenamiento en disco duro físico** seleccionamos **Asignado dinámicamente** y clic en **Continuar**
+8. En **Almacenamiento en disco duro físico** seleccionamos **Reservado dinámicamente** y clic en **Continuar**
     
     ![](./images/vm-hdd-storage.png)
 
@@ -68,5 +68,35 @@
 ## Agregar discos duros virtuales a nuestra máquina virtual
 > :warning: En este ejemplo solo agregaremos dos discos duros virtuales ya que al momento de crear la máquina virtual hemos creado uno de 100 GB.
 1. Seleccionar nuestra máquia virtual a la que le vamos agregar nuestros discos duros
-2. Clic derecho y clic en **configuraciones**
-3. Clic en **storage**
+2. Clic derecho y clic en **Configuración**
+
+    ![](./images/vm-configuration.png)
+
+3. Clic en **Almacenamiento**
+
+    ![](./images/vm-storage.png)
+
+4. Clic para agregar un nuevo disco duro virtual
+
+    ![](./images/vm-new-vhd.png)
+
+5. Clic en el botón de crear
+
+    ![](./images/vm-create-vhd.png)
+
+6. En el tipo de archivo de disco duro seleccionamos la opción VDI y damos clic en **siguiente**
+
+    ![](./images/vm-vdi-vhd.png)
+
+7. Seleccionamos **Reservado dinámicamente** y clic en **Continuar**
+
+    ![](./images/vm-dinamic-vhd.png)
+
+8. Seleccionamos el tamaño del disco duro virtual y clic en **Crear**
+    
+    ![](./images/vm-size-vhd.png)
+    > En este ejemplo estoy seleccionado 100 GB
+
+9. Una vez creado seleccionamos el disco duro virtual y damos clic en **Seleccionar**
+
+    ![](./images/vm-select-vhd.png)
