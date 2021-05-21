@@ -49,13 +49,21 @@
 
 ## Agregar archivo .ISO a nuestra máquina virtual
 1. Seleccionar nuestra máquia virtual a la que le vamos agregar nuestro archivo .ISO
-2. Clic derecho y clic en **configuraciones**
-3. Clic en **storage**
-4. Clic en el apartado de **disk image file**
-5. Clic en **Elige un disco óptico virtual**
-6. Clic en la opción **Escoger archivo de disco** y seleccionamos nuestro archivo .ISO
+2. Clic derecho y seleccionamos la opción de **configuraciones**
 
+    ![](./images/vm-configuration.png)
 
+3. Clic en **Almacenamiento**
+
+    ![](./images/vm-storage.png)
+
+4. Clic en **Vacío** en el apartado de **Dispositivos de almacenamiento**
+
+    ![](./images/vm-vacio.png)
+
+5. Clic en **Seleccione un disco óptico virtual**, seleccionamos la opción **Escoger archivo de disco** y seleccionamos nuestro archivo .ISO
+
+    ![](./images/vm-disco-optico.png)
 
 ## Agregar discos duros a nuestra máquina virtual
 1. Seleccionar nuestra máquia virtual a la que le vamos agregar nuestros discos duros
