@@ -65,7 +65,8 @@
 
     ![](./images/vm-disco-optico.png)
 
-## Agregar discos duros a nuestra máquina virtual
+## Agregar discos duros virtuales a nuestra máquina virtual
+:warning: En este ejemplo solo agregaremos dos discos duros virtuales ya que al momento de crear la máquina virtual hemos creado uno de 100 GB.
 1. Seleccionar nuestra máquia virtual a la que le vamos agregar nuestros discos duros
 2. Clic derecho y clic en **configuraciones**
 3. Clic en **storage**
