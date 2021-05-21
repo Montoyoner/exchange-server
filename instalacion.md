@@ -100,3 +100,5 @@
 9. Una vez creado seleccionamos el disco duro virtual y damos clic en **Seleccionar**
 
     ![](./images/vm-select-vhd.png)
+
+> :warning: Hacer el mismo procedimiento para agregar un disco duro virtual de 200 GB.
