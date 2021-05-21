@@ -6,7 +6,7 @@
 3. [Exchange Server 2016](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj2xobGmdrwAhVKmK0KHVHiDN0QFjAAegQIAhAD&url=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fdownload%2Fdetails.aspx%3Fid%3D57388&usg=AOvVaw321h9vVlI5oBfqDDKUoRnM)
 
 ## Requisitos Máquina virtual
-1. [Windows Server 2016](https://www.microsoft.com/es-xl/evalcenter/evaluate-windows-server-2016)
+1. Windows Server 2016
 2. Tres discos duros virtuales:
     1. Un disco duro virtual de 100 GB para nuestro sistema operativo
     2. Un disco duro virtual de 100 GB para nuestros archivos logs transaccionales
