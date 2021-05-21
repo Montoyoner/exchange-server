@@ -2,7 +2,7 @@
 
 # Microsoft Exchange Server
 
-Microsoft Exchange Server es un correo electrónico empresarial que permite a los usuarios colaborar y trabahar de manera segura.
+Microsoft Exchange Server es un correo electrónico empresarial que permite a los usuarios colaborar y trabajar de manera segura.
 
 # Tabla de contenidos
 1. [Instalación](instalacion.md)
