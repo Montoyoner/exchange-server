@@ -49,7 +49,7 @@
 
 ## Agregar archivo .ISO a nuestra máquina virtual
 1. Seleccionar nuestra máquia virtual a la que le vamos agregar nuestro archivo .ISO
-2. Clic derecho y seleccionamos la opción de **configuraciones**
+2. Clic derecho y seleccionamos la opción de **Configuración**
 
     ![](./images/vm-configuration.png)
 
@@ -61,7 +61,7 @@
 
     ![](./images/vm-vacio.png)
 
-5. Clic en **Seleccione un disco óptico virtual**, seleccionamos la opción **Escoger archivo de disco** y seleccionamos nuestro archivo .ISO
+5. Clic en el icono de **disco** para seleccionar un disco óptico virtual, seleccionamos la opción **Seleccionar un archivo de disco** y seleccionamos nuestro archivo .ISO de windows server 2016.
 
     ![](./images/vm-disco-optico.png)
 
