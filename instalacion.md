@@ -148,16 +148,43 @@
     |Servidor DNS|192.168.0.10|
 3. Instalar ADDS
     1. Clic en **agregar roles y caracteristicas**
+
         ![](./images/vm-add-role.png)
+
     2. Clic en siguiente
     3. Seleccionamos la opción **Instalación basada en funciones** y clic en siguiente
+
         ![](./images/vm-rolebased.png)
+
     4. Seleccionamos el servidor y clic en siguiente
+
         ![](./images/vm-serverpool.png)
+
     5. Seleccionamos el rol de **Active Directory Domain Services**, damos clic en **Agregar caracteristicas** y clic en siguiente
+
         ![](./images/vm-adds-role.png)
+
     6. Clic en siguiente
     7. Clic en instalar
+
         ![](./images/vm-adds-install.png)
+
+4. Promover el servidor a controlador de dominio
+    1. Una vez instalado el rol, clic en **Promomer este servidor a controlador de dominio**
+
+        ![](./images/vm-promote-adds.png)
+    
+    2. Seleccionamos la opción **Agregar un nuevo bosque**, escribimos el nombre del dominio y clic en siguiente.
+        > En este ejemplo se escribo el nombre **adatum.local**
+    
+    3. Escribimos una contraseña para DSRM
+
+        ![](./images/vm-password-adds.png)
+    
+    4. Clic en siguiente
+    5. Clic en **Instalar**
+
+        ![](./images/vm-install-adds.png)
+
 
 
