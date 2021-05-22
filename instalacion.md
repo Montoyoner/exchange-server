@@ -126,3 +126,6 @@
     ![](./images/vm-select-hdd.png)
 
 7. Esperamos a que se instale el sistema operativo.
+8. Agregamos un password y clic en **Terminar**
+
+    ![](./images/vm-passwords.png)
