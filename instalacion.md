@@ -129,3 +129,35 @@
 8. Agregamos un password y clic en **Terminar**
 
     ![](./images/vm-passwords.png)
+
+## Configuración básica de nuestro servidor
+1. Cambiar el nombre de nuestro servidor, abrir PowerShell y ejecutar el siguiente comando:
+    ```powershell
+    Rename-Computer -NewName "SRV-EXCH"
+    ```
+    Después de ejecutar el comando, ejecutar el siguiente comando para reiniciar nuestro servidor
+    ```powershell
+    Restart-Computer
+    ```
+2. Configuración de red de nuestro servidor
+    |||
+    |----|----|
+    |IP address|192.168.0.10|
+    |Mascara de subred|255.255.255.0|
+    |Puerta de enlace predeterminada|192.168.0.1|
+    |Servidor DNS|192.168.0.10|
+3. Instalar ADDS
+    1. Clic en **agregar roles y caracteristicas**
+        ![](./images/vm-add-role.png)
+    2. Clic en siguiente
+    3. Seleccionamos la opción **Instalación basada en funciones** y clic en siguiente
+        ![](./images/vm-rolebased.png)
+    4. Seleccionamos el servidor y clic en siguiente
+        ![](./images/vm-serverpool.png)
+    5. Seleccionamos el rol de **Active Directory Domain Services**, damos clic en **Agregar caracteristicas** y clic en siguiente
+        ![](./images/vm-adds-role.png)
+    6. Clic en siguiente
+    7. Clic en instalar
+        ![](./images/vm-adds-install.png)
+
+
