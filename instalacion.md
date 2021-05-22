@@ -102,3 +102,27 @@
     ![](./images/vm-select-vhd.png)
 
 > :warning: Hacer el mismo procedimiento para agregar un disco duro virtual de 200 GB.
+
+## Instalación windows server 2016
+1. Clic en **Iniciar**
+
+    ![](./images/vm-start.png)
+
+2. Seleccionamos el tiempo y método de entrada del teclado
+
+    ![](./images/vm-time.png)
+
+3. Seleccionar **Windows Server 2016 Standard Evaluation (Desktop Experience)**
+
+    ![](./images/vm-windows-de.png)
+
+4. Aceptamos terminos de licencia
+5. Selecionar opción **Personalizado**
+
+    ![](./images/vm-custom.png)
+
+6. Seleccionamos uno de los discos de 100 GB que agregamos previamente y damos clic en **Siguiente**
+
+    ![](./images/vm-select-hdd.png)
+
+7. Esperamos a que se instale el sistema operativo.
