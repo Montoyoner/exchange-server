@@ -192,6 +192,8 @@
 
 5. Instalar el siguiente software:
     - https://www.microsoft.com/en-US/download/details.aspx?id=56116
+    - http://go.microsoft.com/fwlink/?LinkId=260990
+    - https://www.microsoft.com/download/details.aspx?id=40784 
 
 ## Extender esquema de active directory
 1. Montar ejecutable de exchange server en la máquina virtual
@@ -240,7 +242,36 @@
     ![](./images/vm-prepare-ad.png)
 
 ## Instalar pre-requisitos de exchange server
+
 1. Abrir powershell y correr el siguiente comando
     ```powershell
     Install-WindowsFeature NET-Framework-45-Features, Server-Media-Foundation, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS 
     ```
+    y esperamos a que termine el proceso.
+    
+    ![](./images/vm-pre-installed.png)
+
+## Instalar Exchange Server
+
+1. Doble clic en el ejecutable
+
+    ![](./images/vm-exchange-setup.png)
+    
+2. Clic en **No buscar actualizaciones** y clic en **siguiente**
+
+    ![](./images/vm-exchange-nocheck.png)
+
+3. En el apartado de introducción damos clic en **siguiente** y aceptamos terminos y condiciones
+4. Seleccionar opción **No usar configuraciones recomendadas** y clic en siguiente
+
+    ![](./images/vm-exchange-norecommended.png)
+
+3. Seleccionar la opción de **mailbox rol** y seleccionar la opción de **Instalar automáticamente las funciones y características del servidor de Windows que se requieren para instalar Exchange Server** y clic en **siguiente**
+
+    ![](./images/vm-maillbox-role.png)
+
+4. Clic en **siguiente** en las siguientes opciones
+5. Esperar a que termine la instalación
+6. Reiniciar server
+7. Abrir IE y escribir la siguiente ruta https://srv-exch/owa
+    > srv-exch es el nombre de mi servidor, si tu servidor tiene otro nombre cambia la ruta por el nombre de tu servidor.
