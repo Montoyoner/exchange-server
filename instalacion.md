@@ -188,3 +188,50 @@
 
 
 
+5. Instalar el siguiente software:
+    - https://www.microsoft.com/en-US/download/details.aspx?id=56116
+## Extender esquema de active directory
+1. Montar ejecutable de exchange server en la máquina virtual
+    1. Clic en la pestaña **Dispositivos**
+
+    ![](./images/vm-devices.png)
+
+    2. Poner el cursor en la opción de **Unidades ópticas**
+
+    ![](./images/vm-optic-units.png)
+
+    3. Clic en **Seleccionar un archivo de disco** y buscamos el archivo de exchange server.
+
+    ![](./images/vm-sellect-exchange.png)
+
+    4. Una vez montado el ISO de exchange server verificar en que unidad fue montado
+
+    ![](./images/vm-exchange-mounted.png)
+    > En este ejemplo la imagen de exchange server fue montada en la unidad D
+
+2. Abrir powershell y correr el siguiente comando
+    ```powershell
+    Install-WindowsFeature RSAT-ADDS
+    ```
+3. Abrir cmd como administrador y correr el siguiente comando
+    ```powershell
+    D:
+    ```
+    > Aquí se esta haciendo referencia a la letra de la unidad en donde fue montada la imagen de exchange server
+4. Una vez posicionados en la unidad correspondiente, ejecutar el siguiente comando
+    ```powershell
+    Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
+    ```
+    y esperamos a que termine el proceso.
+    
+    ![](./images/vm-prepare-schema.png)
+
+## Preparar el dominio para exchange server
+1. Abrir cmd como administrador y correr el siguiente comando
+    ```powershell
+    Setup.exe /PrepareAD /OrganizationName:”Adatum” /IAcceptExchangeServerLicenseTerms
+    ```
+    y esperamos a que termine el proceso.
+
+    ![](./images/vm-prepare-ad.png)
+
