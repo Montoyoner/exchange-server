@@ -272,6 +272,6 @@
 
 4. Clic en **siguiente** en las siguientes opciones
 5. Esperar a que termine la instalación
-6. Reiniciar server
+6. Reiniciar servidor
 7. Abrir IE y escribir la siguiente ruta https://srv-exch/owa
     > srv-exch es el nombre de mi servidor, si tu servidor tiene otro nombre cambia la ruta por el nombre de tu servidor.
