@@ -170,11 +170,13 @@
         ![](./images/vm-adds-install.png)
 
 4. Promover el servidor a controlador de dominio
-    1. Una vez instalado el rol, clic en **Promomer este servidor a controlador de dominio**
+    1. Una vez instalado el rol, clic en **Promover este servidor a controlador de dominio**
 
         ![](./images/vm-promote-adds.png)
     
     2. Seleccionamos la opción **Agregar un nuevo bosque**, escribimos el nombre del dominio y clic en siguiente.
+
+        ![](./images/vm-adds-forest.png)
         > En este ejemplo se escribo el nombre **adatum.local**
     
     3. Escribimos una contraseña para DSRM
@@ -190,6 +192,7 @@
 
 5. Instalar el siguiente software:
     - https://www.microsoft.com/en-US/download/details.aspx?id=56116
+
 ## Extender esquema de active directory
 1. Montar ejecutable de exchange server en la máquina virtual
     1. Clic en la pestaña **Dispositivos**
@@ -223,7 +226,7 @@
     Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
     ```
     y esperamos a que termine el proceso.
-    
+
     ![](./images/vm-prepare-schema.png)
 
 ## Preparar el dominio para exchange server
@@ -231,7 +234,13 @@
     ```powershell
     Setup.exe /PrepareAD /OrganizationName:”Adatum” /IAcceptExchangeServerLicenseTerms
     ```
+    > Aqui hay que poner el nombre de la organización, tiene que ser igual que el nombre del dominio.
     y esperamos a que termine el proceso.
 
     ![](./images/vm-prepare-ad.png)
 
+## Instalar pre-requisitos de exchange server
+1. Abrir powershell y correr el siguiente comando
+    ```powershell
+    Install-WindowsFeature NET-Framework-45-Features, Server-Media-Foundation, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS 
+    ```
