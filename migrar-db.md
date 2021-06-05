@@ -35,7 +35,7 @@ Si queremos mover los archivos de base de datos de buzones a otra ubicación, de
 
         ![](./images/exchange-initialize-disk.png)
 
-    3. Seleccionamos los dos discos y damos clic en **siguiente**
+    3. Seleccionamos los dos discos y damos clic en **Ok**
 
         ![](./images/exchange-initialize-disk-1.png)
 
