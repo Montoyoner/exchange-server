@@ -6,3 +6,4 @@ Microsoft Exchange Server es un correo electrónico empresarial que permite a lo
 
 # Tabla de contenidos
 1. [Instalación](instalacion.md)
+2. [Creación de buzones](creacion-buzones.md)
